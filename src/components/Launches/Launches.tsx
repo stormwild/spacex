@@ -43,7 +43,7 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
                 clickHandler(flight_number);
               }}
             >
-              {mission_name}
+              {mission_name} {flight_number}
             </h3>
           )
         )}
@@ -51,7 +51,6 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
       <ul className='list-group list-group-flush'>
         {launches.map(
           ({ flight_number, mission_name, launch_year }: Launch) => (
-            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a
               href='#'
               key={flight_number as string | number | undefined}

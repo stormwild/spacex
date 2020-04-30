@@ -44,7 +44,6 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
             </a>
           )
         )}
-        }
       </ul>
     </div>
   );

@@ -28,29 +28,33 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
           <code>{JSON.stringify(launches)}</code>
         </pre>
       </div>
+      <div>
+        {launches.map(({ mission_name }: { mission_name: string }) => (
+          <h3>{mission_name}</h3>
+        ))}
+      </div>
       <ul className='list-group list-group-flush'>
-        {launches &&
-          launches.map(
-            ({ flight_number, mission_name, launch_year }: Launch) => (
-              // eslint-disable-next-line jsx-a11y/anchor-is-valid
-              <a
-                href='#'
-                key={flight_number as string | number | undefined}
-                className={`list-group-item list-group-item-action ${
-                  id === flight_number ? 'active' : ''
-                } d-flex justify-content-between align-items-center`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  clickHandler(flight_number);
-                }}
-              >
-                <span>{mission_name}</span>
-                <span className='badge badge-primary badge-pill'>
-                  {launch_year}
-                </span>
-              </a>
-            )
-          )}
+        {launches.map(
+          ({ flight_number, mission_name, launch_year }: Launch) => (
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+            <a
+              href='#'
+              key={flight_number as string | number | undefined}
+              className={`list-group-item list-group-item-action ${
+                id === flight_number ? 'active' : ''
+              } d-flex justify-content-between align-items-center`}
+              onClick={(e) => {
+                e.preventDefault();
+                clickHandler(flight_number);
+              }}
+            >
+              <span>{mission_name}</span>
+              <span className='badge badge-primary badge-pill'>
+                {launch_year}
+              </span>
+            </a>
+          )
+        )}
         }
       </ul>
     </div>

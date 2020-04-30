@@ -1,15 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import Launches from './components/Launches/Launches';
 import Launch from './components/Launch/Launch';
-import { useLaunchesQuery } from './generated/graphql';
-import { QueryResult } from 'react-apollo';
 
 const App = () => {
   const [id, setId] = useState(42);
-  const changehandler = useCallback((newId) => setId(newId), []);
-
-  const launches: QueryResult = useLaunchesQuery();
-
+  const clickHandler = useCallback((newId) => setId(newId), []);
   return (
     <>
       <nav className='navbar navbar-light bg-light mb-3'>
@@ -20,7 +15,7 @@ const App = () => {
       <main className='container mb-3' role='main'>
         <div className='row'>
           <div className='col-sm-4'>
-            <Launches {...{ launches, clickHandler: changehandler, id }} />
+            <Launches {...{ clickHandler, id }} />
           </div>
           <div className='col-sm-8'>
             <Launch id={id} />

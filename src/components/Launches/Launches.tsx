@@ -1,19 +1,14 @@
 import React from 'react';
-import { Launch } from '../../generated/graphql';
+import { Launch, useLaunchesQuery } from '../../generated/graphql';
 import { QueryResult } from 'react-apollo';
 
 export type LaunchesProp = {
-  launches: QueryResult;
   clickHandler: Function;
   id: number;
 };
 
-const Launches = (props: LaunchesProp) => {
-  const {
-    launches: { data, error, loading },
-    clickHandler,
-    id,
-  }: LaunchesProp = props;
+const Launches = ({ clickHandler, id }: LaunchesProp) => {
+  const { data, error, loading }: QueryResult = useLaunchesQuery();
 
   if (loading) {
     return <div className='alert alert-info'>...Loading</div>;

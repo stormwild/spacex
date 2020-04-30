@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "codegen": "graphql-codegen --config codegen.yml"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "docs": "yarn build && rm -rf docs/build && cp -R build docs"
   },
   "eslintConfig": {
     "extends": "react-app"

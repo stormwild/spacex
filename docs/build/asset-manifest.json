@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.807610f5.chunk.js",
-    "main.js.map": "/static/js/main.807610f5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.64c216d9.js",
-    "runtime-main.js.map": "/static/js/runtime-main.64c216d9.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.83d9c872.chunk.js": "/static/js/2.83d9c872.chunk.js",
-    "static/js/2.83d9c872.chunk.js.map": "/static/js/2.83d9c872.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d56f3742ac404b9cde0c1f178223e8eb.js": "/precache-manifest.d56f3742ac404b9cde0c1f178223e8eb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.83d9c872.chunk.js.LICENSE.txt": "/static/js/2.83d9c872.chunk.js.LICENSE.txt"
+    "main.css": "/spacex/build/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/spacex/build/static/js/main.af23157f.chunk.js",
+    "main.js.map": "/spacex/build/static/js/main.af23157f.chunk.js.map",
+    "runtime-main.js": "/spacex/build/static/js/runtime-main.128f3439.js",
+    "runtime-main.js.map": "/spacex/build/static/js/runtime-main.128f3439.js.map",
+    "static/css/2.de424728.chunk.css": "/spacex/build/static/css/2.de424728.chunk.css",
+    "static/js/2.83d9c872.chunk.js": "/spacex/build/static/js/2.83d9c872.chunk.js",
+    "static/js/2.83d9c872.chunk.js.map": "/spacex/build/static/js/2.83d9c872.chunk.js.map",
+    "index.html": "/spacex/build/index.html",
+    "precache-manifest.d0c8833bec8f1d860eee24760cfa8f3d.js": "/spacex/build/precache-manifest.d0c8833bec8f1d860eee24760cfa8f3d.js",
+    "service-worker.js": "/spacex/build/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/spacex/build/static/css/2.de424728.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/spacex/build/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.83d9c872.chunk.js.LICENSE.txt": "/spacex/build/static/js/2.83d9c872.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.64c216d9.js",
+    "static/js/runtime-main.128f3439.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.83d9c872.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.807610f5.chunk.js"
+    "static/js/main.af23157f.chunk.js"
   ]
 }

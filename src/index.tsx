@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+import { ApolloProvider as ApolloHooksProvider } from 'react-apollo-hooks';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const client = new ApolloClient({
+  uri: 'https://spacexdata.herokuapp.com/graphql',
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <ApolloHooksProvider client={client}>
+        <App />
+      </ApolloHooksProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

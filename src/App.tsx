@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Launches from './components/Launches/Launches';
+import Launch from './components/Launch/Launch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className='navbar navbar-light bg-light mb-3'>
+        <div className='container'>
+          <span className='navbar-brand mb-0 h1'>SpaceX Launches</span>
+        </div>
+      </nav>
+      <main className='container mb-3' role='main'>
+        <div className='row'>
+          <div className='col-sm-4'>
+            <Launches />
+          </div>
+          <div className='col-sm-8'>
+            <Launch />
+          </div>
+        </div>
+      </main>
+      <footer className='py-3 bg-dark text-muted'>
+        <div className='container'>
+          <p className='float-right'>
+            <a href='#'>Back to top</a>
+          </p>
+          <p>SpaceX Launches</p>
+        </div>
+      </footer>
+    </>
   );
 }
 

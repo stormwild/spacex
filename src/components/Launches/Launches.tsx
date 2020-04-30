@@ -29,9 +29,24 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
         </pre>
       </div>
       <div>
-        {launches.map(({ mission_name }: { mission_name: string }) => (
-          <h3>{mission_name}</h3>
-        ))}
+        {launches.map(
+          ({
+            flight_number,
+            mission_name,
+          }: {
+            flight_number: number;
+            mission_name: string;
+          }) => (
+            <h3
+              onClick={(e) => {
+                e.preventDefault();
+                clickHandler(flight_number);
+              }}
+            >
+              {mission_name}
+            </h3>
+          )
+        )}
       </div>
       <ul className='list-group list-group-flush'>
         {launches.map(

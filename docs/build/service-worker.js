@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://stormwild.github.io/spacex/build/precache-manifest.bdaa45ddda9eb2144f20e6b62ff93274.js"
+  "https://stormwild.github.io/spacex/build/precache-manifest.ccce5dd1c65183a4e2af1f6d48546019.js"
 );
 
 self.addEventListener('message', (event) => {

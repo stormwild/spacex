@@ -2,6 +2,10 @@
 
 A React TypeScript GraphQL application that displays SpaceX launches.
 
+## Demo
+
+[Demo](build)
+
 ## Pre-requisites
 
 - NodeJs, NPM, Yarn
@@ -17,7 +21,7 @@ npx create-react-app spacex --template=typescript
 
 Add GraphQL dependencies
 
-> Now we can install our additional dependencies. Our app will use Apollo to execute GraphQL API requests.  The libraries needed for Apollo are `apollo-boost`, `react-apollo`, `react-apollo-hooks`, `graphql-tag`, and `graphql`.
+> Now we can install our additional dependencies. Our app will use Apollo to execute GraphQL API requests. The libraries needed for Apollo are `apollo-boost`, `react-apollo`, `react-apollo-hooks`, `graphql-tag`, and `graphql`.
 >
 > `apollo-boost` contains the tools needed to query the API and cache data locally in memory; `react-apollo` provides bindings for React; `react-apollo-hooks` wraps Apollo queries in a React Hook; `graphql-tag` is used to build our query documents; and `graphql` is a peer dependency that provides details of the GraphQL implementation.
 
@@ -49,7 +53,7 @@ $ npx graphql-codegen init
 
     Welcome to GraphQL Code Generator!
     Answer few questions and we will setup everything for you.
-  
+
 ? What type of application are you building? Application built with React
 ? Where is your schema?: (path or url) https://spacexdata.herokuapp.com/graphql
 ? Where are your operations and fragments?: src/**/*.{ts,tsx,gql,graphql}
@@ -68,7 +72,7 @@ $ npx graphql-codegen init
       $ npm run codegen
 
     To run GraphQL Code Generator.
-  
+
 
 
 ```

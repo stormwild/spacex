@@ -23,6 +23,11 @@ const Launches = ({ clickHandler, id }: LaunchesProp) => {
   return (
     <div className='card'>
       <h4 className='card-header'>Missions</h4>
+      <div>
+        <pre>
+          <code>{JSON.stringify(launches)}</code>
+        </pre>
+      </div>
       <ul className='list-group list-group-flush'>
         {launches.map(
           ({ flight_number, mission_name, launch_year }: Launch) => (

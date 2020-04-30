@@ -1,9 +1,19 @@
 import React from 'react';
-import { useLaunchesQuery, Launch } from '../../generated/graphql';
+import { Launch } from '../../generated/graphql';
 import { QueryResult } from 'react-apollo';
 
-const Launches = () => {
-  const { data, error, loading }: QueryResult = useLaunchesQuery();
+export type LaunchesProp = {
+  launches: QueryResult;
+  clickHandler: Function;
+  id: number;
+};
+
+const Launches = (props: LaunchesProp) => {
+  const {
+    launches: { data, error, loading },
+    clickHandler,
+    id,
+  }: LaunchesProp = props;
 
   if (loading) {
     return <div className='alert alert-info'>...Loading</div>;
@@ -21,15 +31,23 @@ const Launches = () => {
       <ul className='list-group list-group-flush'>
         {launches.map(
           ({ flight_number, mission_name, launch_year }: Launch) => (
-            <li
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+            <a
+              href='#'
               key={flight_number as string | number | undefined}
-              className='list-group-item d-flex justify-content-between align-items-center'
+              className={`list-group-item list-group-item-action ${
+                id === flight_number ? 'active' : ''
+              } d-flex justify-content-between align-items-center`}
+              onClick={(e) => {
+                e.preventDefault();
+                clickHandler(flight_number);
+              }}
             >
               <span>{mission_name}</span>
               <span className='badge badge-primary badge-pill'>
                 {launch_year}
               </span>
-            </li>
+            </a>
           )
         )}
       </ul>

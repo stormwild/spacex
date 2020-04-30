@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import Launches from './components/Launches/Launches';
 import Launch from './components/Launch/Launch';
+import { useLaunchesQuery } from './generated/graphql';
+import { QueryResult } from 'react-apollo';
 
-function App() {
+const App = () => {
+  const [id, setId] = useState(42);
+  const changehandler = useCallback((newId) => setId(newId), []);
+
+  const launches: QueryResult = useLaunchesQuery();
+
   return (
     <>
       <nav className='navbar navbar-light bg-light mb-3'>
@@ -13,10 +20,10 @@ function App() {
       <main className='container mb-3' role='main'>
         <div className='row'>
           <div className='col-sm-4'>
-            <Launches />
+            <Launches {...{ launches, clickHandler: changehandler, id }} />
           </div>
           <div className='col-sm-8'>
-            <Launch />
+            <Launch id={id} />
           </div>
         </div>
       </main>
@@ -30,6 +37,6 @@ function App() {
       </footer>
     </>
   );
-}
+};
 
 export default App;

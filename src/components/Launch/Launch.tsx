@@ -2,9 +2,9 @@ import React from 'react';
 import { useLaunchQuery } from '../../generated/graphql';
 import { QueryResult } from 'react-apollo';
 
-const Launch = () => {
+const Launch = ({ id }: { id: number }) => {
   const { data, error, loading }: QueryResult = useLaunchQuery({
-    variables: { id: '42' },
+    variables: { id: String(id) },
   });
 
   if (loading) {

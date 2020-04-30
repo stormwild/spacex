@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "https://stormwild.github.io/spacex/build/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "https://stormwild.github.io/spacex/build/static/js/main.a2650228.chunk.js",
-    "main.js.map": "https://stormwild.github.io/spacex/build/static/js/main.a2650228.chunk.js.map",
+    "main.js": "https://stormwild.github.io/spacex/build/static/js/main.ac057d55.chunk.js",
+    "main.js.map": "https://stormwild.github.io/spacex/build/static/js/main.ac057d55.chunk.js.map",
     "runtime-main.js": "https://stormwild.github.io/spacex/build/static/js/runtime-main.2934693d.js",
     "runtime-main.js.map": "https://stormwild.github.io/spacex/build/static/js/runtime-main.2934693d.js.map",
     "static/css/2.de424728.chunk.css": "https://stormwild.github.io/spacex/build/static/css/2.de424728.chunk.css",
-    "static/js/2.83d9c872.chunk.js": "https://stormwild.github.io/spacex/build/static/js/2.83d9c872.chunk.js",
-    "static/js/2.83d9c872.chunk.js.map": "https://stormwild.github.io/spacex/build/static/js/2.83d9c872.chunk.js.map",
+    "static/js/2.157e4733.chunk.js": "https://stormwild.github.io/spacex/build/static/js/2.157e4733.chunk.js",
+    "static/js/2.157e4733.chunk.js.map": "https://stormwild.github.io/spacex/build/static/js/2.157e4733.chunk.js.map",
     "index.html": "https://stormwild.github.io/spacex/build/index.html",
-    "precache-manifest.4aacaf239d81d86282970c362d133e59.js": "https://stormwild.github.io/spacex/build/precache-manifest.4aacaf239d81d86282970c362d133e59.js",
+    "precache-manifest.2ea2a90fe35cd09e3a22a6ef86ffcad7.js": "https://stormwild.github.io/spacex/build/precache-manifest.2ea2a90fe35cd09e3a22a6ef86ffcad7.js",
     "service-worker.js": "https://stormwild.github.io/spacex/build/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "https://stormwild.github.io/spacex/build/static/css/2.de424728.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "https://stormwild.github.io/spacex/build/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.83d9c872.chunk.js.LICENSE.txt": "https://stormwild.github.io/spacex/build/static/js/2.83d9c872.chunk.js.LICENSE.txt"
+    "static/js/2.157e4733.chunk.js.LICENSE.txt": "https://stormwild.github.io/spacex/build/static/js/2.157e4733.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2934693d.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.83d9c872.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a2650228.chunk.js"
+    "static/js/2.157e4733.chunk.js",
+    "static/js/main.ac057d55.chunk.js"
   ]
 }
